@@ -65,7 +65,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-rc01"
 
     // Images
-    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation("io.coil-kt:coil:1.1.0")
 
     // Coroutines
