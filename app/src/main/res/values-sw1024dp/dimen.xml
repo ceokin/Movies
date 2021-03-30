@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">17sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">17sp</dimen>
+
+    <!-- General Text Sizes-->
+    <dimen name="text_xxlarge">42sp</dimen>
+    <dimen name="text_xlarge">32sp</dimen>
+    <dimen name="text_large">27sp</dimen>
+    <dimen name="text_medium">26sp</dimen>
+    <dimen name="text_small">24sp</dimen>
+    <dimen name="text_xsmall">21sp</dimen>
+    <dimen name="text_xxsmall">19sp</dimen>
+    <dimen name="text_xxxsmall">17sp</dimen>
+
+    <!-- General paddings -->
+    <dimen name="margin_standard_layout_xxbig">34dp</dimen>
+    <dimen name="margin_standard_layout_xbig">30dp</dimen>
+    <dimen name="margin_standard_layout_big">26dp</dimen>
+    <dimen name="margin_standard_layout">22dp</dimen>
+    <dimen name="margin_standard_layout_small">18dp</dimen>
+    <dimen name="margin_standard_layout_xsmall">14dp</dimen>
+    <dimen name="margin_standard_layout_xxsmall">9dp</dimen>
+
+    <!-- Lines -->
+    <dimen name="margin_between_lines_xbig">56dp</dimen>
+    <dimen name="margin_between_lines_big">40dp</dimen>
+    <dimen name="margin_between_lines">24dp</dimen>
+    <dimen name="margin_between_lines_small">16dp</dimen>
+    <dimen name="margin_between_lines_xsmall">11dp</dimen>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cartelera</string>
+
+    <string name="no_results">No se ha encontrado ninguna película</string>
+    <string name="no_favorites">Aún no has guadado ningún favorito</string>
+    <string name="search_movie">Buscar película</string>
+    <string name="detail_movie">Información</string>
+    <string name="movie_add_favorite">Película añadida a favoritos</string>
+    <string name="movie_remove_favorite">Película eliminada de favoritos</string>
+    <string name="error_try_later">Se ha producido un error. \nInténtelo de nuevo más tarde</string>
+    <string name="recom_movies">Películas recomendadas</string>
+    <string name="favorites">Favoritos</string>
+    <string name="all">Todos</string>
+</resources>

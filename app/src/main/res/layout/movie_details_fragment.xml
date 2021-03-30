@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ui.MainFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentCl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.43" />
+
+
+            <ImageView
+                android:id="@+id/photo_iv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="4:3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/favoriteFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/red"
+                android:layout_margin='@dimen/margin_standard_layout'
+                app:layout_constraintBottom_toBottomOf="@+id/photo_iv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photo_iv" />
+
+
+            <TextView
+                android:id="@+id/titleDetailTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard_layout_xbig"
+                android:layout_marginRight="@dimen/margin_standard_layout_xbig"
+                android:layout_marginTop="@dimen/margin_between_lines"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/favoriteFb" />
+
+            <TextView
+                android:id="@+id/descriptionDetailTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard_layout_xbig"
+                android:layout_marginRight="@dimen/margin_standard_layout_xbig"
+                android:layout_marginTop="@dimen/margin_between_lines_big"
+                android:paddingBottom="@dimen/margin_standard_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintTop_toBottomOf="@+id/titleDetailTv" />
+
+
+            <TextView
+                android:id="@+id/headerRecomTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_lines_big"
+                android:layout_marginStart="@dimen/margin_standard_layout"
+                android:gravity="center_horizontal"
+                android:text="@string/recom_movies"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionDetailTv" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_lines"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headerRecomTv"
+                android:paddingBottom="@dimen/margin_between_lines_big">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recomMoviesRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard_layout"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:listitem="@layout/recom_item_layout"/>
+
+                <include
+                    android:id="@+id/errorRecomContainer"
+                    layout="@layout/error_layout"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/errorContainer"
+            layout="@layout/error_layout"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
